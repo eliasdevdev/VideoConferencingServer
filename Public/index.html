@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class= " bg-blue-800 m-0 p-0">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "stylesheet" type="text/css" href = "css/style.css"> 
+        <title>Apprentice Masterpannel</title>
+        <script src="/socket.io/socket.io.js"></script>
+    </head>
+
+    <script src = "indexbundle.js"></script>
+
+    <body>
+      
+      <button id = "my-button">start</button>
+
+      <div class = "ver-flexbox-container"> 
+       
+      <div class="hor-flexbox-container">
+        <h1 href = "home.blade.php"><a href="home" class = "logo">Apprentice</a></h1>
+        <div class = "buttondiv">
+        <form class = "" method="post" action="/logoutmaster"> <button class="button" type = "submit"> Log out</button> </form>
+        </div>
+      </div>
+
+      <div class = "gridcontainer">
+      <div class="grid">
+        <div class="gridflexbox" id=1>
+           
+          <div class = "zoomwindow"><video id="video1" class = "video" autoplay></video></div>
+          <div class = "chatdiv">
+            <div class = "convdiv invisible-scrollbar" id = "1">
+              
+            </div>
+              <textarea class = "chatbox" id="textbox"></textarea>
+          </div>
+        </div>
+        <div class="gridflexbox" id=2>
+             
+          <div class = "zoomwindow"><video id="video2" class = "video"  autoplay></video></div>
+          <div class = "chatdiv">
+            <div class = "convdiv invisible-scrollbar" id = "2">
+  
+            </div>
+              <textarea class = "chatbox" id="textbox"></textarea>
+          </div>
+        </div>
+
+        <div class="gridflexbox" id=3>
+               
+          <div class = "zoomwindow"><video id="video3" class = "video"  autoplay></video></div>
+          <div class = "chatdiv">
+            <div class = "convdiv invisible-scrollbar" id = "3">
+  
+            </div>
+              <textarea class = "chatbox" id="textbox"></textarea>
+          </div>
+        </div>
+
+        <div class="gridflexbox" id=5>
+                   
+          <div class = "zoomwindow"><video id="video5" class = "video"  autoplay></video></div>
+          <div class = "chatdiv">
+            <div class = "convdiv invisible-scrollbar" id = "5">
+  
+            </div>
+              <textarea class = "chatbox" id="textbox"></textarea>
+          </div>
+        </div>
+
+        <div class="gridflexbox" id=6>
+                     
+          <div class = "zoomwindow"><video id="video6" class = "video" autoplay></video></div>
+          <div class = "chatdiv">
+            <div class = "convdiv invisible-scrollbar" id = "6">
+  
+            </div>
+              <textarea class = "chatbox" id="textbox"></textarea>
+          </div>
+        </div>
+
+
+
+        </div>
+      </div>
+      
+      <footer></footer>
+      </div>
+    </div>
+    
+    </body>
+</html>

@@ -1,0 +1,213 @@
+@font-face {
+    font-family: 'Roobert';
+    src: url('../Font/Roobert-Regular.woff2') format('woff2'),
+        url('../Font/Roobert-Regular.woff') format('woff'),
+        url('../Font/Roobert-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  *{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roobert';
+  }
+
+  html{
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+  }
+  
+  .ver-flexbox-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .hor-flexbox-container {
+    display: flex;
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: space-between;
+    margin-top: 5px;
+  
+  }
+
+  #my-button{
+    position: fixed;
+    top: 50px;
+    left: 250px;
+    background-color: aqua;
+  }
+  
+  .logo{
+    padding-top: 2px;
+    font-weight: 100;
+    font-size: 2rem;
+    color: white;
+    font-family: 'Roobert';
+    margin-left: 5px;
+    text-decoration: none;
+  }
+
+  .buttondiv {
+    display: flex;
+    flex-direction: column;
+    padding-top: 7px;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+    margin-right: 10px;
+  }
+  
+  .button{
+    width: 180px;
+    border-radius: 5px;
+    font-size: 100%;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+  }
+  
+  .gridcontainer{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .grid{
+    display: grid;
+    width: 95%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  .gridflexbox{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    padding: 2px;
+    align-items: center;
+  }
+  
+  .zoomwindow{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: rgb(241, 241, 241);
+    overflow: hidden;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
+
+  .video{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+    box-sizing: border-box;
+    object-fit: cover;
+
+  }
+
+  .chatdiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    
+  }
+  .convdiv{
+    background-color: rgb(241, 241, 241);
+    padding:10px;
+    width : 100%;
+    height: 70px;
+    border-radius: 1px;
+    margin-bottom: 7px;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    box-sizing: border-box;
+    
+  }
+  
+  .invisible-scrollbar::-webkit-scrollbar{
+    display: none; 
+  }
+  
+  .chatblockdiv{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+  }
+  
+  .chatblockotherdiv{
+    justify-content: flex-start;
+  }
+  
+  .chatblockthisdiv{
+    justify-content: flex-end;
+  }
+  
+  .chatblock{
+    border-radius: 25px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 10px;
+    height:fit-content;
+    max-width: 50%;
+  }
+  
+  .chatblockthis{
+    background-color:rgb(255, 228, 72);  
+  }
+  
+  .chatblockother{
+    background-color: lightgray;
+     
+  }
+  
+  .chattext{
+    word-wrap: break-word;
+  }
+  
+  .chatbox{
+    height: 25px;
+    width: 100%;
+    font-size: 1rem;
+  
+    border-radius: 5px;
+    resize: none;
+    outline: none;
+  
+    padding-left: 5px;
+  }
+
+  footer{
+    width: 100%;
+    height: 150px;
+    background-color:black
+
+}
